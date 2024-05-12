@@ -2,7 +2,7 @@
 title: Dell Optiplex as an OPNSense Router
 date: 2024-02-29 23:00:00 -0500
 categories: [Cybersecurity]
-tags: [cybersecurity, IT, networking]
+tags: [cybersecurity, it, networking]
 img_path: /assets/img/
 ---
 
