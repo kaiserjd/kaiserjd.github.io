@@ -19,7 +19,7 @@ To be honest, I probably could have avoided this whole ordeal by simply requesti
 My setup is mostly based upon mochman's popular method of [bypassing CGNAT](https://github.com/mochman/Bypass_CGNAT) with Wireguard. However, the fact that the automated installer didn't help me much and due to my choice of VPS (Oracle cloud), I was forced to do everything manually.
 
 My setup goes something like this:
-![Setup](CGNAT-bypass.drawio.png)
+![Setup](/assets/img/CGNAT-bypass.drawio.png)
 
 Nothing too crazy or different here. Where the real pain points were was in the IPTables and Wireguard configurations.
 

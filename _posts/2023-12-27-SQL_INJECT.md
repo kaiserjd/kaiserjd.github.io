@@ -20,11 +20,11 @@ making the choice for a web application obvious: a simple login page.</p>
 
 The entire website is very simple, featuring just two pages:
 
-![Login Page](login-page.png){: width="1915" height="408" }
+![Login Page](assets/img/login-page.png){: width="1915" height="408" }
 _The Login Page_
 <br>
 
-![User Page](user-page.png)
+![User Page](/assets/img/user-page.png)
 _The User Page_
 
 The technology stack behind this website is pretty much what you\'d expect, with the frontend being handled by vanilla JS, HTML, and CSS, and the backend being a mixture of Node, Express, and EJS. And, as this was originally a project meant to improve my SQL skills, it also uses a mySQL server for the login credentials.
@@ -70,7 +70,7 @@ SELECT * FROM users WHERE username = "admin" AND pword = "" OR ""=""
 
 This query can effectively bypass the need for a password for any account. Because the SQL statement `OR ""=""` is always true, no password check will ever take place, and the user will be logged into the admin account without ever knowing the password.
 
-![Admin Page](admin-page.png){: width="1915"}
+![Admin Page](assets/img/admin-page.png){: width="1915"}
 _The Admin Page_
 
 # Goodbye

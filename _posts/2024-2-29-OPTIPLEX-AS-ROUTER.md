@@ -23,7 +23,7 @@ I'd like to do more testing in the future on the power efficiency of these compu
 
 > A side note to anyone who wishes to prepare a similar setup: the I340s come stock with a full-sized mounting bracket, but the Optiplex SFFs have low profile PCIe slots. As such, it is important to purchase a low profile bracket _before_ your other parts arrive, lest you wish to be disappointed (I am _definitely_ not speaking from experience here).
 
-![The Optiplex](optiplex-redacted.jpg)
+![The Optiplex](/assets/img/optiplex-redacted.jpg)
 _It's almost like it's meant to be..._
 
 _Also yes, the NIC is a little.. off. We love him all the same._
@@ -40,7 +40,7 @@ As I was setting up Unbound as a recursive resolver, I had set my upstream DNS s
 
 Coming to the realization that my woes were caused by such a simple mistake was painful at first, but as soon as the DHCP leases began expiring and the sweet, sweet data started pouring in, it didn't hurt as much.
 
-![Unbound Working](unbound-working.png)
+![Unbound Working](/assets/img/unbound-working.png)
 _The moment I figured it out_
 
 # Long Overdue
