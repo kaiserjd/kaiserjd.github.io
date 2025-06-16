@@ -14,9 +14,9 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Jlog # the main title
+title: kaiserjd # the main title
 
-tagline: Tangents about things that interest me # it will display as the sub-title
+tagline: A place to write about the things I'm working on # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   I write things about cybersecurity, information technology, and computer science sometimes
@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Joshua Kaiser
-  email: kaiserjd@gmail.com # change to your email address
+  email: kaiserjd03@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com # change to your twitter homepage
