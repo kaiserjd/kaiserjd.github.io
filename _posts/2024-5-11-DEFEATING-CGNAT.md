@@ -10,7 +10,7 @@ img_path: /assets/img/
 
 I've been having a problem with my self-hosted servers for the past year or so. I tend to host game servers for myself and a few friends, and it they worked flawlessly up until about a year ago. It wasn't until I cobbled together my own [OPNsense router](https://kaiserjd.github.io/posts/OPTIPLEX-AS-ROUTER/) that I figured out the reason: my ISP had put me behind carrier-grade NAT (and hadn't even bothered to give me IPv6!).
 
-I figured I would detail my process for getting around this in a blog post, with some finer details stripped or changed out to ensure I'm not providing my entire configuration for the internet to see.
+I figured I would detail my process for getting around this in a blog post, with some finer details stripped or changed to ensure I'm not providing my entire configuration for the internet to see.
 
 # An Overview of My Setup
 
@@ -36,7 +36,7 @@ This is the actually interesting part of my setup that took the longest to get w
 On both this machine and my NGINX machine are installations of Wireguard, with my VPS being the server and my NGINX machine being the client. After ensuring NGINX worked correctly, Wireguard was my second focus, and oh boy did it take quite a bit of focus.
 
 Apparently, Oracle has some very special configured Ubuntu Server images which require some extra workarounds. This is also one of the reasons IPTables is required for this setup: special NAT and firewall rules are required to forward traffic over a Wireguard tunnel.
-The rules I use look similar to this, which were simplified from [this](https://www.reddit.com/r/WireGuard/comments/oxmcvx/comment/h7nl24o/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) incredibly helpful Reddit comment:
+The rules I use look similar to this, which were simplified from [this](https://www.reddit.com/r/WireGuard/comments/oxmcvx/comment/h7nl24o/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) incredibly helpful post:
 
 ```bash
 # Workaround for Oracle Cloud shenanigans
@@ -84,6 +84,6 @@ Again, if you'd like to copy these, make sure you include the relevant PostDown 
 
 # Conclusion
 
-This whole process probably took me about a month of on and off work. I left quite a bit out and would highly recommend again to anyone who has this need to try [mochman](https://github.com/mochman/Bypass_CGNAT)'s automated solution before going this route.
+This whole process probably took me about a month of on and off work. I left quite a bit out and would highly recommend again to anyone who doesn't wish to go through this process to try [mochman](https://github.com/mochman/Bypass_CGNAT)'s automated solution beforehand.
 
 While I may not have had a lot of time to dedicate to this project over this past semester, and while I certainly made plenty of mistakes along the way, I learned an absolute ton from doing this. I'm almost a little bit thankful to my ISP for not making it easy on me, as I wouldn't have had a reason to learn this otherwise.

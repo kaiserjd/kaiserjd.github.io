@@ -11,10 +11,12 @@ img_path: /assets/img/
 Before I get into any of the juicy bits, I\'d first like to apologize for what will likely be a rather
 bland first post. I\'m very new to this whole blogging thing. The source code for everything in this project can be found [here](https://github.com/kaiserjd/login-form)
 
-<p>Anyways, this whole project started as an attempt to make a simple web application
+<p>This whole project started as an attempt to make a simple web application
 using SQL, in order to practice what I had been learning in my database course at the time.
 Quicky thereafter I had the bright idea of introducing an SQL injection vulnerability for fun,
 making the choice for a web application obvious: a simple login page.</p>
+
+_By the way, the source code for this project can be found [here](https://github.com/kaiserjd/login-form)_
 
 # Website Construction
 
@@ -29,11 +31,11 @@ _The User Page_
 
 The technology stack behind this website is pretty much what you\'d expect, with the frontend being handled by vanilla JS, HTML, and CSS, and the backend being a mixture of Node, Express, and EJS. And, as this was originally a project meant to improve my SQL skills, it also uses a mySQL server for the login credentials.
 
-While I can all but guarantee that nearly every part of this website could be built better, (and why this project should probably serve as my certificate of disqualification from ever working in web dev), it does its primary job very well: to serve a single SQL query.
+While I can all but guarantee that nearly every part of this 'website' could be built better, it does its primary job very well: to serve a single SQL query.
 
 # SQL Shenanigans
 
-Seeing as the whole point of SQL injection attacks is to manipulate a poorly constructed SQL query, I\'d like to show you the one I came up with. First, however, I think it would be a good idea to show what a well constructed query looks like in comparison.
+Seeing as the whole point of SQL injection attacks is to manipulate a poorly constructed SQL query, I\'d like to show you the one I came up with. First, however, I think it would be a good idea to show what a less vulnerable query looks like in comparison.
 
 ```javascript
 "SELECT * FROM users WHERE username = ? AND pword = ?",
@@ -75,4 +77,4 @@ _The Admin Page_
 
 # Goodbye
 
-Hopefully this didn\'t bore you too much. This blogging thing is pretty neat, and honestly I find sharing what I\'ve learned to be very helpful in cementing my learnings. Please let me know if there\'s anything you think I can improve on as I continue writing, and thank you very much for reading.
+While this was a simple implementation of perhaps one of the most studied vulnerabilities of all time, I think that every aspiring IT or computer science professional should try their hand at creating vulnerabilities in an environment where they can do no harm. Learning about best practices in handling user input or data is good and all, but seeing what happens when those best practices aren't in place is the only way to truly understand why these vulnerabilities can be so harmful.

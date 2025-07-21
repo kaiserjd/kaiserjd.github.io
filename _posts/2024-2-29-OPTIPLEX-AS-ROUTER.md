@@ -26,8 +26,6 @@ I'd like to do more testing in the future on the power efficiency of these compu
 ![The Optiplex](/assets/img/optiplex-redacted.jpg)
 _It's almost like it's meant to be..._
 
-_Also yes, the NIC is a little.. off. We love him all the same._
-
 I don't have much to say about the actual installation of either the parts or OPNSense itself. Both were easy to accomplish and went off without a hitch.
 
 # The Unbound Debacle
@@ -38,7 +36,6 @@ No, my mistake was a simple one. After first enabling Unbound and configuring a 
 
 As I was setting up Unbound as a recursive resolver, I had set my upstream DNS servers in System > Settings > General. However, what I had neglected to realize was that, in my initial setup of the firewall, I had _also_ set DNS servers in the DHCPv4 service - completely overriding the system's default DNS servers.
 
-Coming to the realization that my woes were caused by such a simple mistake was painful at first, but as soon as the DHCP leases began expiring and the sweet, sweet data started pouring in, it didn't hurt as much.
 
 ![Unbound Working](/assets/img/unbound-working.png)
 _The moment I figured it out_
