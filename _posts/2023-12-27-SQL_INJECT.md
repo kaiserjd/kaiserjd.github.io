@@ -8,15 +8,12 @@ img_path: /assets/img/
 
 # Intro
 
-Before I get into any of the juicy bits, I\'d first like to apologize for what will likely be a rather
-bland first post. I\'m very new to this whole blogging thing. The source code for everything in this project can be found [here](https://github.com/kaiserjd/login-form)
-
 <p>This whole project started as an attempt to make a simple web application
 using SQL, in order to practice what I had been learning in my database course at the time.
 Quicky thereafter I had the bright idea of introducing an SQL injection vulnerability for fun,
 making the choice for a web application obvious: a simple login page.</p>
 
-_By the way, the source code for this project can be found [here](https://github.com/kaiserjd/login-form)_
+By the way, the source code for this project can be found [here](https://github.com/kaiserjd/login-form)
 
 # Website Construction
 
